@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AtomFlot.BerthingPage"
+             Title="BerthingPage">
+    <StackLayout>
+        <Label Text="Название корабля" />
+        <Entry Text="{Binding NameKor}" />
+        <Label Text="Имя капитана" />
+        <Entry Text="{Binding NameKop}" />
+        <Label Text="Порт" />
+        <Entry Text="{Binding Port}" />
+        <Label Text="Цель визита" />
+        <Entry Text="{Binding Posechenie}" />
+        <StackLayout Orientation="Horizontal">
+            <Button Text="Сохранить" Clicked="SaveStudent" />
+            <Button Text="Удалить" Clicked="DeleteStudent" />
+            <Button Text="Отмена" Clicked="Cancel" />
+        </StackLayout>
+    </StackLayout>
+</ContentPage>
